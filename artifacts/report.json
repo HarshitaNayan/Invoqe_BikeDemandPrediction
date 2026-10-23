@@ -1,0 +1,56 @@
+{
+  "selected_model": "Gradient boosting",
+  "selection": "Lowest mean MAE in 3 expanding-window development folds, 24-observation gap; final 20% of dates held out.",
+  "features": [
+    "yr",
+    "mnth",
+    "hr",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "hum",
+    "windspeed",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos"
+  ],
+  "excluded": [
+    "instant",
+    "dteday",
+    "casual",
+    "registered",
+    "cnt",
+    "atemp",
+    "season"
+  ],
+  "cleaning": {
+    "raw_rows": 17379,
+    "clean_rows": 17379,
+    "removed_rows": 0,
+    "missing_feature_cells": 0
+  },
+  "train_rows": 13891,
+  "test_rows": 3488,
+  "train_end": "2012-08-06 23:00:00",
+  "test_start": "2012-08-07 00:00:00",
+  "test_end": "2012-12-31 23:00:00",
+  "best_parameters": {
+    "Mean baseline": {},
+    "Linear regression": {},
+    "Random forest": {
+      "randomforestregressor__min_samples_leaf": 2
+    },
+    "Gradient boosting": {
+      "histgradientboostingregressor__l2_regularization": 0,
+      "histgradientboostingregressor__max_leaf_nodes": 31
+    }
+  },
+  "test_metrics": {
+    "MAE": 42.733801764719594,
+    "RMSE": 65.1647405383084,
+    "R2": 0.9126552704871437
+  }
+}
