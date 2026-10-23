@@ -1,6 +1,6 @@
 # CycleScope — Bike Rental Demand Prediction
 
-An Invoqe internship project prepared for Harshita Nayan. Predict hourly rental counts from calendar and weather conditions using real historical data. No API key is required.
+An Invoqe internship project that predict hourly rental counts from calendar and weather conditions using real historical data. No API key is required.
 
 ## Run on Windows / VS Code
 
